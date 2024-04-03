@@ -1,0 +1,164 @@
+﻿# embrace_english_culture_effect = {
+# 	# Scopes saves for localization
+# 	root = {
+# 		save_scope_as = embracer
+# 	}
+
+# 	# Prestige Bonus
+# 	add_prestige = medium_prestige_gain
+
+# 	#Convert your, and your whole family's, culture
+# 	set_culture = culture:english
+# 	if = {
+# 		limit = { any_spouse = { is_landed = no } }
+# 		every_spouse = {
+# 			limit = {
+# 				is_landed = no
+# 			}
+# 			set_culture = culture:english
+# 		}
+# 	}
+# 	if = {
+# 		limit = {
+# 			any_close_family_member = {
+# 				is_landed = no
+# 				NOT = { is_spouse_of = root }
+# 			}
+# 		}
+# 		every_close_family_member = {
+# 			limit = {
+# 				is_landed = no
+# 				NOT = { is_spouse_of = root }
+# 			}
+# 			custom = all_unlanded_family_members
+# 			set_culture = culture:english
+# 		}
+# 	}
+
+# 	#Convert appropriate vassals, and their family
+# 	if = {
+# 		limit = {
+# 			any_vassal_or_below = {
+# 				is_ai = yes
+# 				OR = {
+# 					culture = culture:norman
+# 					culture = culture:french
+# 				}
+# 				primary_title = {
+# 					OR = {
+# 						de_jure_liege = title:k_england
+# 						de_jure_liege.de_jure_liege = title:k_england
+# 						de_jure_liege.de_jure_liege.de_jure_liege = title:k_england
+# 					}
+# 				}
+# 			}
+# 		}
+# 		every_vassal_or_below = {
+# 			custom = embrace_english_culture_vassals_custom
+# 			limit = {
+# 				is_ai = yes
+# 				OR = {
+# 					culture = culture:norman
+# 					culture = culture:french
+# 				}
+# 				primary_title = {
+# 					OR = {
+# 						de_jure_liege = title:k_england
+# 						de_jure_liege.de_jure_liege = title:k_england
+# 						de_jure_liege.de_jure_liege.de_jure_liege = title:k_england
+# 					}
+# 				}
+# 			}
+# 			set_culture = culture:english
+# 		}
+# 	}
+
+# 	#Flip Counties
+# 	every_county_in_region = {
+# 		region = custom_england
+# 		custom = embrace_english_culture_counties_custom
+# 		limit = {
+# 			target_is_de_facto_liege_or_above = root.primary_title
+# 		}
+# 		random = {
+# 			chance = 40
+# 			set_county_culture = culture:english
+# 		}
+# 	}
+
+# 	culture:english = {
+# 		custom_tooltip = decision_embrace_english_culture_get_innovations
+# 		hidden_effect = {
+# 			reset_culture_creation_date = yes
+# 			get_all_innovations_from = culture:norman
+# 			get_all_innovations_from = culture:anglo_saxon
+# 		}
+# 	}
+# }
+
+form_hebrew_decision_effects = {
+	#Covert self & court to hebrew culture
+	if = {
+		limit = { NOT = { has_culture = culture:hebrew } }
+
+		every_courtier = {
+			limit = { has_same_culture_as = scope:hebrew_former }
+			add_to_list = convert_list
+		}
+		#transfer over innovations from previous culture. 
+		culture:hebrew = {
+			reset_culture_creation_date = yes
+			get_all_innovations_from = scope:hebrew_former.culture
+		}
+		set_culture = culture:hebrew
+
+		every_in_list = {
+			list = convert_list
+			custom = hebrew_convert_list #This says "every subject in the realm" even though vassals and their courts only covert later, through event
+			set_culture = culture:hebrew
+		}
+	}
+
+	# Convert Israelite counties to Hebrew culture
+	every_sub_realm_county = {
+		limit = {
+			tier = tier_county
+			culture = { has_cultural_pillar = heritage_israelite }
+			OR = {
+				de_jure_liege = title:d_palestine
+				de_jure_liege = title:d_urdunn
+				de_jure_liege = title:d_oultrejourdain
+			}
+		}
+		custom = hebrew_convert_israelite_counties
+		set_county_culture = culture:hebrew
+	}
+	every_sub_realm_county = {
+		limit = {
+			tier = tier_county
+			NOT = { culture = { has_cultural_pillar = heritage_israelite } }
+			OR = {
+				de_jure_liege = title:d_palestine
+				de_jure_liege = title:d_urdunn
+				de_jure_liege = title:d_oultrejourdain
+			}
+		}
+		custom = hebrew_convert_non_israelite_counties
+		random = {
+			chance = 50
+			set_county_culture = culture:hebrew
+		}
+	}
+
+	#Innovations
+	culture:hebrew = {
+		add_random_innovation = culture_group_military
+		add_random_innovation = culture_group_civic
+	}
+
+	#fame
+	scope:hebrew_former.dynasty = {
+	add_dynasty_prestige_level = 1	
+	add_dynasty_prestige = 250
+	}	
+}

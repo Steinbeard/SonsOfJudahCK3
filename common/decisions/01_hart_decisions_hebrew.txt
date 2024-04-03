@@ -1,0 +1,102 @@
+﻿###DECISIONS LIST###
+
+#form_portugal_decision
+#unite_the_spanish_thrones_decision
+#unite_africa_decision
+#avenge_the_battle_of_tours_decision
+#build_grand_church_decision
+
+form_hebrew_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	major = yes
+	ai_check_interval = 60
+	desc = form_hebrew_decision_desc
+
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_israelite }
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:form_hebrew_decision
+			}
+		}
+	}
+
+	is_valid = {
+		prestige_level >= high_prestige_level
+		is_independent_ruler = yes 
+		custom_description = {
+			text = "jerusalem_is_same_faith"
+			title:c_jerusalem.faith = root.faith
+		}
+		
+		culture = { has_cultural_pillar = heritage_israelite }
+
+		OR = { #Must be Jewish/Samaritan
+			faith.religion = religion:judaism_religion
+		}
+
+		trigger_if = {
+			limit = { title:d_palestine = { any_in_de_jure_hierarchy = { tier = tier_county } } } #Has de jure land
+			completely_controls = title:d_palestine
+		}
+		trigger_if = {
+			limit = { title:d_oultrejourdain = { any_in_de_jure_hierarchy = { tier = tier_county } } } #Has de jure land
+			completely_controls = title:d_oultrejourdain
+		}
+		trigger_if = {
+			limit = { title:d_urdunn = { any_in_de_jure_hierarchy = { tier = tier_county } } } #Has de jure land
+			completely_controls = title:d_urdunn
+		}
+	}
+
+	effect = {
+		save_scope_as = hebrew_former
+
+		show_as_tooltip = { form_hebrew_decision_effects = yes }
+
+		#Events
+		trigger_event = hart_hebrew.0001
+		every_player = {
+			limit = {
+				NOT = { this = scope:hebrew_former }
+				is_within_diplo_range = { CHARACTER = scope:hebrew_former }
+			}
+			trigger_event = hart_hebrew.0002
+		}
+		every_vassal_or_below = {
+			limit = {
+				is_ai = yes
+				exists = capital_province
+				capital_province = {
+					county = {
+						any_this_title_or_de_jure_above = {
+							this = title:k_israel
+						}
+					}
+				}	
+			}
+			trigger_event = hart_hebrew.0002 #So they can convert
+		}
+
+		#Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:form_hebrew_decision
+		}
+		set_global_variable = {
+			name = form_hebrew_decision
+			value = scope:hebrew_former
+		}
+	}
+
+	cost = { prestige = { value = 2000 } }
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

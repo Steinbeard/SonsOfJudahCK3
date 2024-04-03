@@ -1,0 +1,67 @@
+﻿# standard costs
+@maa_buy_cost = 150
+@maa_low_maintenance_cost = 1.0
+@maa_high_maintenance_cost = 5.0
+@cultural_maa_extra_ai_score = 60 # Equivalent to having 6 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+
+temple_zealots = {
+	type = skirmishers
+	
+	damage = 12
+	toughness = 28
+	pursuit = 5
+	screen = 50
+	
+	terrain_bonus = {
+		drylands = { damage = 8 toughness = 2 }
+		desert = { damage = 8 toughness = 2 }
+	}
+	
+	counters = {
+		light_cavalry = 2
+		skirmishers = 1
+	}
+
+	can_recruit = {
+		culture = { has_cultural_parameter = unlock_maa_temple_zealots }
+	}
+
+	buy_cost = { piety = shomer_recruitment_cost }
+	low_maintenance_cost = { gold = shomer_low_maint_cost }
+	high_maintenance_cost = { gold = shomer_high_maint_cost }
+	
+	stack = 75
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = temple_zealots
+}
+
+# judean_slingers = {
+# 	type = archers
+	
+# 	damage = 18
+# 	toughness = 10
+# 	pursuit = 10
+# 	screen = 40
+	
+# 	terrain_bonus = {
+# 		drylands = { damage = 2 toughness = 2 }
+# 		desert = { damage = 6 toughness = 2 }
+# 		desert_mountains = { damage = 12 toughness = 4 }
+# 	}
+	
+# 	counters = {
+# 		skirmishers = 2.5
+# 	}
+
+# 	can_recruit = {
+# 		culture = { has_cultural_parameter = unlock_maa_judean_slingers }
+# 	}
+	
+# 	buy_cost = { gold = shomer_recruitment_cost }
+# 	low_maintenance_cost = { gold = shomer_low_maint_cost }
+# 	high_maintenance_cost = { gold = shomer_high_maint_cost }
+	
+# 	stack = 100
+# 	ai_quality = { value = @cultural_maa_extra_ai_score }
+# 	icon = archers #temporary - needs to be slingers
+# }

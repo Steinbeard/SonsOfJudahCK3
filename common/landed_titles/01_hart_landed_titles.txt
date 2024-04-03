@@ -1,0 +1,239 @@
+﻿
+	k_jerusalem = {
+		color = { 180 180 180 }
+		color2 = { 255 255 255 }
+		
+		capital = c_jerusalem
+		
+		can_create = {
+			faith = { religion_tag = christianity_religion }
+		}
+		
+		can_create_on_partition = {
+			faith = { religion_tag = christianity_religion }
+		}
+		
+		ai_primary_priority = {
+			if = {
+				limit = {
+					faith = faith:catholic
+				}
+				add = @always_primary_score
+			}
+		}
+		
+		# Creation/Usurp Trigger
+		
+		# Creation Effect
+		
+		d_oultrejourdain = {
+			color = { 190 190 180 }
+			color2 = { 255 255 255 }
+			
+			capital = c_kerak
+			
+			cultural_names = {
+				name_list_hebrew = cn_negev
+				name_list_ashkenazi = cn_negev
+				name_list_sepharadi = cn_negev
+				name_list_kochinim = cn_negev
+			}
+			
+			c_kerak = { #Al-Karak
+				color = { 150 150 170 }
+				color2 = { 255 255 255 }
+				
+				b_kerak = { #Al-Karak
+					province = 5980
+					
+					color = { 150 150 170 }
+					color2 = { 255 255 255 }
+				}
+				b_shawbak = { #AKA Monreal
+					province = 5978
+					
+					color = { 150 150 170 }
+					color2 = { 255 255 255 }
+				}
+				b_at-tafila = {
+					province = 5979
+					
+					color = { 150 150 170 }
+					color2 = { 255 255 255 }
+				}
+			}
+			c_negev = {
+				color = { 190 180 165 }
+				color2 = { 255 255 255 }
+				
+				b_zughar = {
+					province = 5969
+					
+					color = { 190 180 165 }
+					color2 = { 255 255 255 }
+				}
+				b_baidha-petra = { #Yes, this is Petra
+					province = 5971
+					
+					color = { 190 180 165 }
+					color2 = { 255 255 255 }
+				}
+				b_arandal = {
+					province = 5972
+					
+					color = { 190 180 165 }
+					color2 = { 255 255 255 }
+				}
+				b_aila = { #AKA Eilat
+					province = 5973
+					
+					color = { 190 180 165 }
+					color2 = { 255 255 255 }
+				}
+			}
+		}
+		
+		d_palestine = {
+			color = { 160 160 200 }
+			color2 = { 255 255 255 }
+			
+			capital = c_jerusalem
+			
+			cultural_names = {
+				name_list_hebrew = cn_judea
+				name_list_ashkenazi = cn_judea
+				name_list_sepharadi = cn_judea
+				name_list_kochinim = cn_judea
+			}
+			
+			c_jerusalem = {
+				color = { 176 190 140 }
+				color2 = { 255 255 255 }
+				
+				b_jerusalem = {
+					province = 5965
+					
+					color = { 176 190 140 }
+					color2 = { 255 255 255 }
+				}
+				b_ar-ramla = {
+					province = 5963
+					
+					color = { 176 190 140 }
+					color2 = { 255 255 255 }
+				}
+				b_nablus = {
+					province = 5964
+					
+					color = { 176 190 140 }
+					color2 = { 255 255 255 }
+				}
+				b_hebron = {
+					province = 5966
+					
+					color = { 176 190 140 }
+					color2 = { 255 255 255 }
+				}
+			}
+			c_ghazza = {
+				color = { 167 165 190 }
+				color2 = { 255 255 255 }
+				
+				b_ghazza = {
+					province = 5968
+					
+					color = { 167 165 190 }
+					color2 = { 255 255 255 }
+				}
+				b_ascalon = {
+					province = 5967
+					
+					color = { 167 165 190 }
+					color2 = { 255 255 255 }
+				}
+			}
+			c_jaffa = {
+				color = { 167 190 150 }
+				color2 = { 255 255 255 }
+				
+				b_yaffa = {
+					province = 5962
+					
+					color = { 167 190 150 }
+					color2 = { 255 255 255 }
+				}
+				b_cesarea = {
+					province = 5961
+					
+					color = { 167 190 150 }
+					color2 = { 255 255 255 }
+				}
+			}
+		}
+		
+		d_urdunn = { #AKA Galilee
+			color = { 225 200 160 }
+			color2 = { 255 255 255 }
+			
+			capital = c_tiberias
+			
+			cultural_names = {
+				name_list_hebrew = cn_galil
+				name_list_ashkenazi = cn_galil
+				name_list_sepharadi = cn_galil
+				name_list_kochinim = cn_galil
+			}
+			
+			c_tiberias = {
+				color = { 225 220 160 }
+				color2 = { 255 255 255 }
+				
+				b_tiberias = {
+					province = 5959
+					
+					color = { 225 220 160 }
+					color2 = { 255 255 255 }
+				}
+				b_baniyas = {
+					province = 5922
+					
+					color = { 225 220 160 }
+					color2 = { 255 255 255 }
+				}
+			}
+			c_acre = {
+				color = { 245 245 200 }
+				color2 = { 255 255 255 }
+				
+				b_acre = {
+					province = 5960
+					
+					color = { 245 245 200 }
+					color2 = { 255 255 255 }
+				}
+				b_tyre = {
+					province = 5921
+					
+					color = { 245 245 200 }
+					color2 = { 255 255 255 }
+				}
+			}
+			c_irbid = {
+				color = { 230 250 190 }
+				color2 = { 255 255 255 }
+				
+				b_irbid = {
+					province = 5958
+					
+					color = { 230 250 190 }
+					color2 = { 255 255 255 }
+				}
+				b_jarash = {
+					province = 5985
+					
+					color = { 230 250 190 }
+					color2 = { 255 255 255 }
+				}
+			}
+		}
+	}

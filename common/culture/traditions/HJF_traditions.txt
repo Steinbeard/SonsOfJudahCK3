@@ -1,0 +1,160 @@
+﻿################################
+# HART'S CULTURAL TRADITIONS #
+################################
+
+
+tradition_ingathering = { #Ingathering of the exiles HART_Gathering of the Exiles, Societal Tradition
+	category = societal
+
+	layers = {
+		0 = diplo
+		1 = mena
+		4 = exiles.dds
+	}
+
+	# The disaporic people of ancient Israel have finally reclaimed their homeland and now are no longer in the diaspora, they are ingathering the exiles.
+	is_shown = { always = no }
+	can_pick = { always = no }
+	
+	parameters = {
+		extra_language_cap = yes
+	}
+
+	character_modifier = {
+		learning = 2
+		stress_gain_mult = -0.15
+		character_capital_county_monthly_development_growth_add = 0.05
+	}
+	
+	cost = { prestige = 9999 }
+	ai_will_do = { value = 0 }
+}
+
+tradition_chosen_people = { #"the Chosen People" HART_Chosen People Ritualistic Tradition
+	category = ritual
+
+	layers = {
+		0 = learning
+		1 = mediterranean
+		4 = chosen.dds
+	}
+
+	# The disaporic people of ancient Israel have finally reclaimed their homeland and now are no longer in the diaspora, they are ingathering the exiles.
+	is_shown = { always = no }
+	can_pick = { always = no }
+	
+	parameters = {
+		same_faith_inheritance_only = yes
+	}
+
+	character_modifier = {
+		faith_conversion_piety_cost_mult = 3
+		monthly_piety = 0.2
+		learning_per_prestige_level = 1
+		same_faith_opinion = 10
+		opinion_of_same_faith = 10
+		opinion_of_same_culture = 5
+		opinion_of_different_faith_liege = -5
+		different_culture_opinion = -10
+		opinion_of_different_culture = -10 #this culture considers itself the chosen people, as a result they are disliked for their arrogance
+		diplomatic_range_mult = -0.1
+	}
+
+	county_modifier = {
+		# = 0.1
+	}
+	
+	cost = { prestige = 9999 }
+	ai_will_do = { value = 0 }
+}
+
+tradition_fanatic_defenders = { #Hart_Fanatic Defenders MAA type tradition
+	category = regional
+
+	layers = {
+		0 = martial
+		1 = mena
+		4 = shield.dds
+	}
+
+	#Replaces Stand and Fight
+	is_shown = {
+		has_cultural_pillar = heritage_israelite
+		NOT = { has_cultural_tradition = tradition_diasporic }
+	}
+	can_pick = {
+	}
+	
+	parameters = {
+		unlock_maa_temple_zealots = yes
+		#unlock_maa_judean_slingers = yes
+	}
+	character_modifier = {
+		prowess_per_piety_level = 2
+		skirmishers_toughness_mult = 0.10
+		skirmishers_maintenance_mult = 0.05
+		archers_toughness_mult = 0.10
+		archers_maintenance_mult = 0.05
+		hard_casualty_modifier = 0.15
+		defender_advantage = 5
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_in_list = { list = traits this = flag:ethos_stoic }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_stoic_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							number_maa_soldiers_of_base_type = {
+								type = skirmishers
+								value >= 800
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = culture_head_skirmishers_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				NOR = {
+					culture_has_heavy_infantry_maa = yes
+					culture_has_heavy_cavalry_maa = yes
+					culture_has_pikemen_maa = yes
+				}
+				OR = {
+					culture_has_skirmisher_maa = yes
+					culture_has_archer_maa = yes
+					culture_has_light_cavalry_maa = yes
+					culture_has_archer_cavalry_maa = yes
+				}
+			}
+			multiply = 0.25
+		}
+	}
+}

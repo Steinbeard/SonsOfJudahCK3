@@ -1,0 +1,11 @@
+﻿l_english:
+
+ #REFORM THE HEBREW CULTURE
+ form_hebrew_decision:0 "Gather the Exiles"
+ form_hebrew_decision_desc:0 "Once I am in control of the ancient lands of Israel, I can end the exile of my people and revive the Hebrew culture."
+ hebrew_convert_list:3 "Every [THIS.Char.GetCulture.GetHeritage.GetNameNoTooltip] [heritage|E] subject in [THIS.Char.GetUINamePossessive] realm"
+ hebrew_convert_list_court:1 "Every [THIS.Char.GetCulture.GetName] [courtier|E]"
+ hebrew_convert_israelite_counties:2 "Every [THIS.Char.GetCulture.GetHeritage.GetNameNoTooltip] [heritage|E] county in ancestral Israel"
+ hebrew_convert_non_israelite_counties:0 "Every other county in your kingdom"
+ form_hebrew_decision_confirm:0 "Reform the Hebrew Culture"
+ form_hebrew_decision_tooltip:0 "Reform the Hebrew culture and establish it in ancestral Israel"
