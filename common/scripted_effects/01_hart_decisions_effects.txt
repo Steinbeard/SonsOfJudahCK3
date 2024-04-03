@@ -157,8 +157,9 @@ form_hebrew_decision_effects = {
 	}
 
 	#fame
+	# TODO debug why this is broken
 	scope:hebrew_former.dynasty = {
-	add_dynasty_prestige_level = 1	
-	add_dynasty_prestige = 250
+		add_dynasty_prestige_level = 1	
+		add_dynasty_prestige = 250
 	}	
 }

@@ -1,10 +1,10 @@
 ﻿l_english:
 
- hart_hebrew.0001.t:0 "The Sons and Daughters of Judah, finally back home!"
- hart_hebrew.0001.start.desc:0 "This day will forever be remembered as the day the Israelites reclaimed their land and ancestry."
- hart_hebrew.0001.jewish.desc:0 "Our people have suffered under foreign rule in the diaspora for centuries, but no more. Finally, through glorious conquest in the name of [ROOT.Char.GetFaith.WarGodName], we are a free [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] nation!\n\n"
- hart_hebrew.0001.end.desc:0 "Over the millennia, our people spread all across civilization, from Cordoba in the west to Delhi in the east. They have all contributed to the complex web that is our cultural heritage but so is this land and its ancient traditions. We no longer are a diasporic people and as of today, we proudly call ourselves Hebrews once again!"
- hart_hebrew.0001.a:0 "We reclaim our ancestry!"
+ hart_hebrew.0001.t:0 "A Culture for our Homeland"
+ hart_hebrew.0001.start.desc:0 "This day will forever be remembered as the day the Israelites returned to the ways of their ancestors."
+ hart_hebrew.0001.jewish.desc:0 "Our people have suffered under foreign rule in the diaspora for centuries, but no more. Finally, with the blessing of [ROOT.Char.GetFaith.WarGodName], we are a free [ROOT.Char.GetFaith.GetAdjectiveNoTooltip] nation!\n\n"
+ hart_hebrew.0001.end.desc:0 "Over the millennia, our people spread all across civilization, from Cordoba in the west to Delhi in the east. They have all contributed to the complex web that is our cultural heritage, but so is this land and its ancient traditions. We no longer are a diasporic people and as of today, we proudly reclaim our ancestry."
+ hart_hebrew.0001.a:0 "We are Hebrews!"
  hart_hebrew.0002.start.desc:0 "A new era has come to the Jewish People!"
 #  hart_hebrew.0002.relation_former.desc:0 "My [ROOT.Char.Custom2('RelationToMe', hebrew_former)] [hebrew_former.GetTitledFirstName]"
 #  hart_hebrew.0002.former.desc:0 "[hebrew_former.GetTitledFirstName]"

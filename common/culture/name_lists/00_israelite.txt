@@ -240,3 +240,84 @@ name_list_radhanite = {
 	
 	
 }
+
+# name_list_bavlim = {
+# 	cadet_dynasty_names = {
+# 		"dynn_Rabban"
+# 		"dynn_Efraim"
+# 		"dynn_Eliyahu"
+# 		"dynn_Cohen"
+# 		"dynn_Dharan"
+# 		"dynn_Yitzhak"
+# 		"dynn_Koder"
+# 		"dynn_Japheth"
+# 		"dynn_Hallegua"
+# 		"dynn_Madayi"
+# 		"dynn_Meir"
+# 		"dynn_Menahem"
+# 		"dynn_Mutath"
+# 		"dynn_Nehemya"
+# 		"dynn_Oran"
+# 		"dynn_Pallivathikal"
+# 		"dynn_Rahabi"
+# 		"dynn_Sarphati"
+# 		"dynn_Sassoon"
+# 		"dynn_Chorath"
+# 		"dynn_Solomon"
+# 		"dynn_Yaakov"
+# 	}
+
+# 	dynasty_names = {
+# 		"dynn_Rabban"
+# 		"dynn_Efraim"
+# 		"dynn_Eliyahu"
+# 		"dynn_Cohen"
+# 		"dynn_Dharan"
+# 		"dynn_Yitzhak"
+# 		"dynn_Koder"
+# 		"dynn_Japheth"
+# 		"dynn_Hallegua"
+# 		"dynn_Madayi"
+# 		"dynn_Meir"
+# 		"dynn_Menahem"
+# 		"dynn_Mutath"
+# 		"dynn_Nehemya"
+# 		"dynn_Oran"
+# 		"dynn_Pallivathikal"
+# 		"dynn_Rahabi"
+# 		"dynn_Sarphati"
+# 		"dynn_Sassoon"
+# 		"dynn_Chorath"
+# 		"dynn_Solomon"
+# 		"dynn_Yaakov"
+# 	}
+
+# 	male_names = {
+# 		Anah Anat Atalyah MaAkhah Machlah Aviyah Diklah Gomer Mikhayahu Ofir Yachin AchAv Adalya Adam Adinah
+# 		Adlai Adoniram Adoniyah Adriel Aharon Amaryahu Amittai Ammiel Amnon Amos Amram Anaiah Anan Anani Aran Arieh
+# 		AriEl Asa Asaf Asher Asnappar AvdiEl Avidan AviEl Avihu AvimaEl Avimelekh Aviram Avishay Avner Avraham
+# 		Avram Avshalom Azarel Azaryah Azazyahu AzriEl BaAl Barak Barukh Belshatzzar Benayahu BetUel Binyamin Boaz
+# 		Chaggai Chanan Chananyah Chanokh Chavaqquq ChazaEl Chizqiyahu Dan Daniyyel Daryawesh Dawid Delayahu Efrayim
+# 		Ehud Eiran Eitan Elah ElAzar Elchanan Eli Eliav Eliel EliEzer Elifalet Elifelet Elihu Elisha Elishua Eliyyahu
+# 		Elkanah Elnatan Elon Enosh Esaw Evyatar Ezer Ezra Gad Gamaliel GavriEl Gedalyahu Gemaryahu Gershom Gershon
+# 		GidOn Gilad Golyat Haran Hevel Hillel Hiram Hoshea Iddo Ilai Immanuel Ira Itamar Iyyov Kalev Kayin
+# 		Keinan Kenanyahu Koresh Laban Lael Lebanah Lemuel Levi Lot Machli MalAkhi Mattan Mattanyahu Mattithyahu Mattityahu
+# 		Melech Menachem Menashsheh Meshullam Metushelach MikhaEl Mikhah Mordokhay Moshe Nachum Nadav Naftali Natan Nechemyah
+# 		Neriah NetanEl Netanyahu Nimrod Nogah Ofrah Omri Ovadyah Oved Peleg Penuel Peretz Pinchas QemuEl
+# 		RafaEl RehavAm Reuel Reuven Sancheriv Seraiah Shalmaneser ShaUl SheAltiEl Shelach Shelah Shelomoh
+# 		Shem ShemaYah ShemuEl Shet Shimon Shimshon Talmai Tammuz Teman Terach Toviyyah Tzefanyah Tzidkiyahu Tzion Tzivah
+# 		TzuriEl Uri Uriyah UriyEl Uzzi Uzziel Uzziyyah Yaakov YachleEl YachtzeEl Yadon Yair Yamin YaRah YaravAm
+# 		Yared Yawan Yechezkel YechiEl Yedidyah Yefet YehoAsh Yehochanan Yehonatan Yehoram Yehoshafat Yehoshua Yehoyakhin
+# 		Yehoyakim Yehu Yehudah Yehudi Yekonyah YerachmeEl Yeriyahu YeshaYahu Yeshua Yiftach Yirmiyahu Yishai Ittay
+# 		BaAlZevuv Tovi Noach
+# 	}
+# 	female_names = {
+# 		Anah Anat Atalyah MaAkhah Machlah Achinoam Asenat Atarah Avigayil Avishag Avital Basmat BatSheva
+# 		Beulah Bilhah Bityah Chaggit Channah Chavah CheftziBah Chuldah Delilah Devorah Dinah Ednah Efrat Elisheva
+# 		Ester Hadassah Hagar Hodiyah Izevel KetziAh Leah Machalat MeheitavEl Merav Mikhal Miriam NaAmah NaOmi
+# 		Orpah Rachel Rivqah Rut Sarah Shifra Shoshannah Shulammit Tamar Tirtzah Tzillah Tzipporah Tzivyah
+# 		Yael Yedidah Yehosheva Yehudit Yemima Yerushah NoAh Keren Aviyah Diklah Gomer Mikhayahu Ofir Yachin
+# 	}
+	
+# 	dynasty_of_location_prefix = "dynnp_of"
+# }
