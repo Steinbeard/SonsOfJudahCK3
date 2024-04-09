@@ -2,7 +2,7 @@
 # OLD MESADA
 ##########
 
-mesada_01 = {
+masada_01 = {
 
 	construction_time = very_slow_construction_time
 
@@ -33,12 +33,12 @@ mesada_01 = {
 		culture_likely_to_fortify_modifier = yes
 	}
 	
-	next_building = mesada_02
+	next_building = masada_02
 	
 	type = special
 }
 
-mesada_02 = {
+masada_02 = {
 
 	construction_time = very_slow_construction_time
 
@@ -83,12 +83,12 @@ mesada_02 = {
 		culture_likely_to_fortify_modifier = yes
 	}
 	
-	next_building = mesada_03
+	next_building = masada_03
 	
 	type = special
 }
 
-mesada_03 = {
+masada_03 = {
 
 	construction_time = very_slow_construction_time
 

@@ -33,7 +33,7 @@
  culture_parameter_unlock_maa_abudrar:0 "Can recruit [GetMaA('abudrar').GetName] as [men_at_arms|E]"
  culture_parameter_unlock_maa_palace_guards:0 "Can recruit [GetMaA('palace_guards').GetName] as [men_at_arms|E]"
  
- #Military
+ Military
  tradition_hird_name:0 "$innovation_hird$"
  tradition_hird_desc:0 "$innovation_hird_desc$"
  innovation_hird:0 "Hirds"
@@ -42,8 +42,8 @@
  innovation_zweihanders:0 "Zweihanders"
  innovation_zweihanders_desc:1 "These massive two-handed swords are as adept at cutting down charging $knight_culture_player_plural_no_tooltip_lowercase$ as they are at breaking enemy pike formations, making them a formidable addition to our own pike regiments."
 
- #innovation_longbows:0 "Longbow"
- #innovation_longbows_desc:0 "Taking advantage of the strong yew wood that grows here, our bowyers have learned to make longbows so powerful they require specialized training from an early age to use effectively. This investment is worth it, as our longbowmen can shoot arrows which travel further and penetrate deeper than those fired by other archers."
+#  innovation_longbows:0 "Longbow"
+#  innovation_longbows_desc:0 "Taking advantage of the strong yew wood that grows here, our bowyers have learned to make longbows so powerful they require specialized training from an early age to use effectively. This investment is worth it, as our longbowmen can shoot arrows which travel further and penetrate deeper than those fired by other archers."
 
  innovation_adaptive_militia:0 "Adaptive Militia"
  innovation_adaptive_militia_desc:1 "Weapons like the goedendag are cheap and easy to produce, yet surprisingly effective against cavalry charges. Their existence allows us to adapt our militias to have much better odds when fighting armored $knight_culture_player_plural_no_tooltip_lowercase$."

@@ -26,7 +26,7 @@
 		
 		# Creation Effect
 		
-		d_oultrejourdain = {
+		d_oultrejourdain = { #AKA Negev
 			color = { 190 190 180 }
 			color2 = { 255 255 255 }
 			
@@ -35,13 +35,24 @@
 			cultural_names = {
 				name_list_hebrew = cn_negev
 				name_list_ashkenazi = cn_negev
-				name_list_sepharadi = cn_negev
+				name_list_sephardi = cn_negev
 				name_list_kochinim = cn_negev
+				name_list_radhanite = cn_negev
+				name_list_bavlim = cn_negev
 			}
 			
 			c_kerak = { #Al-Karak
 				color = { 150 150 170 }
 				color2 = { 255 255 255 }
+
+				cultural_names = { # Biblical name for the southern Jordan Valley
+					name_list_hebrew = cn_arabah
+					name_list_ashkenazi = cn_arabah
+					name_list_sephardi = cn_arabah
+					name_list_kochinim = cn_arabah
+					name_list_radhanite = cn_arabah
+					name_list_bavlim = cn_arabah
+				}
 				
 				b_kerak = { #Al-Karak
 					province = 5980
@@ -54,12 +65,30 @@
 					
 					color = { 150 150 170 }
 					color2 = { 255 255 255 }
+
+					cultural_names = { # The ancient capital of Edom
+						name_list_hebrew = cn_bozrah
+						name_list_ashkenazi = cn_bozrah
+						name_list_sephardi = cn_bozrah
+						name_list_kochinim = cn_bozrah
+						name_list_radhanite = cn_bozrah
+						name_list_bavlim = cn_bozrah
+					}
 				}
 				b_at-tafila = {
 					province = 5979
 					
 					color = { 150 150 170 }
 					color2 = { 255 255 255 }
+
+					cultural_names = { # Mountain where Israelites camped on the edge of Edom
+						name_list_hebrew = cn_hor
+						name_list_ashkenazi = cn_hor
+						name_list_sephardi = cn_hor
+						name_list_kochinim = cn_hor
+						name_list_radhanite = cn_hor
+						name_list_bavlim = cn_hor
+					}
 				}
 			}
 			c_negev = {
@@ -71,24 +100,60 @@
 					
 					color = { 190 180 165 }
 					color2 = { 255 255 255 }
+
+					cultural_names = { # AKA Zoar
+						name_list_hebrew = cn_zoar
+						name_list_ashkenazi = cn_zoar
+						name_list_sephardi = cn_zoar
+						name_list_kochinim = cn_zoar
+						name_list_radhanite = cn_zoar
+						name_list_bavlim = cn_zoar
+					}
 				}
 				b_baidha-petra = { #Yes, this is Petra
 					province = 5971
 					
 					color = { 190 180 165 }
 					color2 = { 255 255 255 }
+
+					cultural_names = {
+						name_list_hebrew = cn_petra
+						name_list_ashkenazi = cn_petra
+						name_list_sephardi = cn_petra
+						name_list_kochinim = cn_petra
+						name_list_radhanite = cn_petra
+						name_list_bavlim = cn_petra
+					}
 				}
 				b_arandal = {
 					province = 5972
 					
 					color = { 190 180 165 }
 					color2 = { 255 255 255 }
+
+					cultural_names = { # Southern wilderness
+						name_list_hebrew = cn_paran
+						name_list_ashkenazi = cn_paran
+						name_list_sephardi = cn_paran
+						name_list_kochinim = cn_paran
+						name_list_radhanite = cn_paran
+						name_list_bavlim = cn_paran
+					}
 				}
 				b_aila = { #AKA Eilat
 					province = 5973
 					
 					color = { 190 180 165 }
 					color2 = { 255 255 255 }
+
+					cultural_names = {
+						name_list_hebrew = cn_eilat
+						name_list_ashkenazi = cn_eilat
+						name_list_sephardi = cn_eilat
+						name_list_kochinim = cn_eilat
+						name_list_radhanite = cn_eilat
+						name_list_bavlim = cn_eilat
+					}
 				}
 			}
 		}
@@ -102,8 +167,10 @@
 			cultural_names = {
 				name_list_hebrew = cn_judea
 				name_list_ashkenazi = cn_judea
-				name_list_sepharadi = cn_judea
+				name_list_sephardi = cn_judea
 				name_list_kochinim = cn_judea
+				name_list_radhanite = cn_judea
+				name_list_bavlim = cn_judea
 			}
 			
 			c_jerusalem = {
@@ -121,12 +188,30 @@
 					
 					color = { 176 190 140 }
 					color2 = { 255 255 255 }
+
+					cultural_names = { # Near Lod
+						name_list_hebrew = cn_lod
+						name_list_ashkenazi = cn_lod
+						name_list_sephardi = cn_lod
+						name_list_kochinim = cn_lod
+						name_list_radhanite = cn_lod
+						name_list_bavlim = cn_lod
+					}
 				}
 				b_nablus = {
 					province = 5964
 					
 					color = { 176 190 140 }
 					color2 = { 255 255 255 }
+
+					cultural_names = { # AKA Shechem
+						name_list_hebrew = cn_shechem
+						name_list_ashkenazi = cn_shechem
+						name_list_sephardi = cn_shechem
+						name_list_kochinim = cn_shechem
+						name_list_radhanite = cn_shechem
+						name_list_bavlim = cn_shechem
+					}
 				}
 				b_hebron = {
 					province = 5966
@@ -150,6 +235,15 @@
 					
 					color = { 167 165 190 }
 					color2 = { 255 255 255 }
+
+					cultural_names = {
+						name_list_hebrew = cn_ashkelon
+						name_list_ashkenazi = cn_ashkelon
+						name_list_sephardi = cn_ashkelon
+						name_list_kochinim = cn_ashkelon
+						name_list_radhanite = cn_ashkelon
+						name_list_bavlim = cn_ashkelon
+					}
 				}
 			}
 			c_jaffa = {
@@ -180,8 +274,10 @@
 			cultural_names = {
 				name_list_hebrew = cn_galil
 				name_list_ashkenazi = cn_galil
-				name_list_sepharadi = cn_galil
+				name_list_sephardi = cn_galil
 				name_list_kochinim = cn_galil
+				name_list_radhanite = cn_galil
+				name_list_bavlim = cn_galil
 			}
 			
 			c_tiberias = {
@@ -199,6 +295,15 @@
 					
 					color = { 225 220 160 }
 					color2 = { 255 255 255 }
+
+					cultural_names = { # Baniyas was associated with Biblical Dan by Medieval Jews
+						name_list_hebrew = cn_dan
+						name_list_ashkenazi = cn_dan
+						name_list_sephardi = cn_dan
+						name_list_kochinim = cn_dan
+						name_list_radhanite = cn_dan
+						name_list_bavlim = cn_dan
+					}
 				}
 			}
 			c_acre = {
@@ -221,18 +326,45 @@
 			c_irbid = {
 				color = { 230 250 190 }
 				color2 = { 255 255 255 }
+
+				cultural_names = { # AKA Biblical Gilead
+					name_list_hebrew = cn_gilead
+					name_list_ashkenazi = cn_gilead
+					name_list_sephardi = cn_gilead
+					name_list_kochinim = cn_gilead
+					name_list_radhanite = cn_gilead
+					name_list_bavlim = cn_gilead
+				}
 				
 				b_irbid = {
 					province = 5958
 					
 					color = { 230 250 190 }
 					color2 = { 255 255 255 }
+
+					cultural_names = { # Tp the north of Gilead proper
+						name_list_hebrew = cn_bashan
+						name_list_ashkenazi = cn_bashan
+						name_list_sephardi = cn_bashan
+						name_list_kochinim = cn_bashan
+						name_list_radhanite = cn_bashan
+						name_list_bavlim = cn_bashan
+					}
 				}
 				b_jarash = {
 					province = 5985
 					
 					color = { 230 250 190 }
 					color2 = { 255 255 255 }
+
+					cultural_names = {
+						name_list_hebrew = cn_gilead
+						name_list_ashkenazi = cn_gilead
+						name_list_sephardi = cn_gilead
+						name_list_kochinim = cn_gilead
+						name_list_radhanite = cn_gilead
+						name_list_bavlim = cn_gilead
+					}
 				}
 			}
 		}

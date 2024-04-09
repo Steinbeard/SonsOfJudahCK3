@@ -1,4 +1,26 @@
 ﻿l_english:
+ #Israelite group
+ israelite_group:0 "Israelite"
+ israelite_group_collective_noun:0 "Israelites"
+ ashkenazi:0 "Ashkenazi"
+ ashkenazi_prefix:0 "Ashkenazi"
+ ashkenazi_collective_noun:1 "Ashkenazim"
+ hebrew:0 "Hebrew"
+ hebrew_prefix:0 "Hebrew"
+ hebrew_collective_noun:1 "Hebrews"
+ sephardi:0 "Sephardi"
+ sephardi_prefix:0 "Sephardo"
+ sephardi_collective_noun:1 "Sephardim"
+ radhanite:0 "Radhanite"
+ radhanite_prefix:0 "Radhanite"
+ radhanite_collective_noun:0 "Radhanites"
+ kochinim:0 "Kochinim"
+ kochinim_prefix:0 "Kocheo"
+ kochinim_collective_noun:0 "Kochinims"
+ bavlim:1 "Bavli"
+ bavlim_prefix:0 "Bavleo"
+ bavlim_collective_noun:1 "Bavlim
+
  #TODO
  #REMOVE CULTURES THAT ARE EXCLUSIVE TO 769
  #Altaic group	##SPLIT intO MONGOLIC & TURKIC
@@ -422,27 +444,6 @@
  tajik:0 "Tajik"
  tajik_prefix:0 "Tajiki"
  tajik_collective_noun:0 "Tajiks"
- #Israelite group
- israelite_group:0 "Israelite"
- israelite_group_collective_noun:0 "Israelites"
- ashkenazi:0 "Ashkenazi"
- ashkenazi_prefix:0 "Ashkenazi"
- ashkenazi_collective_noun:1 "Ashkenazim"
- hebrew:0 "Hebrew"
- hebrew_prefix:0 "Hebrew"
- hebrew_collective_noun:1 "Hebrews"
- sephardi:0 "Sephardi"
- sephardi_prefix:0 "Sephardo"
- sephardi_collective_noun:1 "Sephardim"
- radhanite:0 "Radhanite"
- radhanite_prefix:0 "Radhanite"
- radhanite_collective_noun:0 "Radhanites"
- kochinim:0 "Kochinim"
- kochinim_prefix:0 "Kocheo"
- kochinim_collective_noun:0 "Kochinims"
- bavlim:1 "Bavli"
- bavlim_prefix:0 "Bavleo"
- bavlim_collective_noun:1 "Bavlim
  #Latin group
  latin_group:0 "Latin"
  latin_group_collective_noun:0 "Latins"

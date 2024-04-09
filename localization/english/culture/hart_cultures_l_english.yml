@@ -1,0 +1,22 @@
+﻿l_english:
+ #Israelite group
+ israelite_group:0 "Israelite"
+ israelite_group_collective_noun:0 "Israelites"
+ ashkenazi:0 "Ashkenazi"
+ ashkenazi_prefix:0 "Ashkenazi"
+ ashkenazi_collective_noun:1 "Ashkenazim"
+ hebrew:0 "Hebrew"
+ hebrew_prefix:0 "Hebrew"
+ hebrew_collective_noun:1 "Hebrews"
+ sephardi:0 "Sephardi"
+ sephardi_prefix:0 "Sephardo"
+ sephardi_collective_noun:1 "Sephardim"
+ radhanite:0 "Radhanite"
+ radhanite_prefix:0 "Radhanite"
+ radhanite_collective_noun:0 "Radhanites"
+ kochinim:0 "Kochinim"
+ kochinim_prefix:0 "Kocheo"
+ kochinim_collective_noun:0 "Kochinims"
+ bavlim:0 "Bavli"
+ bavlim_prefix:0 "Bavli"
+ bavlim_collective_noun:1 "Bavlim

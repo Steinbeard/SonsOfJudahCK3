@@ -1,4 +1,13 @@
 ﻿l_english:
+ tradition_ingathering_name:0 "Ingathering of the Exiles"
+ tradition_ingathering_desc:1 "People of this culture spent centuries in exile, but have since returned to their ancestral homeland. The mingling of diverse traditions from their former diaspora gives them a proclivity for intellectual curiosity."
+ tradition_fanatic_defenders_name:0 "Fanatic Defenders"
+ tradition_fanatic_defenders_desc:1 "These people are under constant siege, with enemies all around them. Lived experience has hardened them to have unbreakable willpower and an unrelenting faith."
+ tradition_chosen_people_name:0 "God's Chosen People"
+ tradition_chosen_people_desc:1 "According to ancient texts, God has chosen these people as His own, which is believed by Jews, Christians, and Muslims to this day. While this tradition helps unite these people, it also seperates them further from the rest of the world."
+ tradition_diasporic_name:0 "Diasporic"
+ tradition_diasporic_desc:1 "People of this culture have lost the homeland they once held dear. Some among them travel the world searching for a place where they may begin anew."
+
  # Ethoses
  ethos_bellicose_name:0 "Bellicose"
  ethos_bellicose_desc:1 "This culture considers conflict and violence to be necessary states of existence; ingrained in its people is the idea that one should stand up and fight for their own. "
@@ -300,14 +309,6 @@
  tradition_ancient_miners_desc:1 "This culture has always been surrounded by raw materials, ore, and uncut gems. They have an affinity for finding sites for mining excavations."
  tradition_wetlanders_name:0 "Wetlanders"
  tradition_wetlanders_desc:1 "This culture has mastered the bogs and marshes. Though life is at times a battle against mold, they have learned to use the peat to their advantage."
- tradition_ingathering_name:0 "Ingathering of the Exiles"
- tradition_ingathering_desc:1 "People of this culture have reclaimed their ancestral homeland after close to a thousand years of exile, they have brought with them many learned people and among them some of the world's brightest minds."
- tradition_fanatic_defenders_name:0 "Fanatic Defenders"
- tradition_fanatic_defenders_desc:1 "These people constantly are under siege, enemies in all directions seek to destroy them yet, they endure, achieved through unbreakable willpower and an unrelenting faith."
- tradition_chosen_people_name:0 "God's Chosen People"
- tradition_chosen_people_desc:1 "According to the ancient texts God have chosen these people as his own, it is still a common belief of the Jews, Christians and Muslims that the Hebrews are indeed God's chosen. While this belief helps unite these people, it also seperates them further from the rest of the world."
- tradition_diasporic_name:0 "Diasporic"
- tradition_diasporic_desc:1 "People of this culture have lost the homeland they once held dear. Some among them travel the world searching for a place where they may begin anew."
  tradition_sorcerous_metallurgy_name:0 "Sorcerous Metallurgy"
  tradition_sorcerous_metallurgy_desc:1 "There are as many alchemists in this culture attempting to turn metal into gold as there are smiths forging weapons. What does it matter if this culture's wealth and weaponry are enhanced by witchcraft?"
  tradition_polders_name:0 "Polders"

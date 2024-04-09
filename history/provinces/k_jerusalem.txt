@@ -192,7 +192,7 @@
 	religion = ashari
 	# History
 	769.1.1 = {
-		special_building = mesada_01
+		special_building = masada_01
 	}
 	
 	# History

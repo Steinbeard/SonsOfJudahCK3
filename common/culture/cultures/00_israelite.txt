@@ -17,7 +17,7 @@
 	
 	coa_gfx = { israelite_group_coa_gfx }
 	building_gfx = { mena_building_gfx }
-	clothing_gfx = { byzantine_clothing_gfx }
+	clothing_gfx = { western_clothing_gfx }
 	unit_gfx = { mena_unit_gfx }
 	
 	ethnicities = {
@@ -48,7 +48,7 @@ sephardi = {
 	
 	coa_gfx = { israelite_group_coa_gfx }
 	building_gfx = { mena_building_gfx }
-	clothing_gfx = { byzantine_clothing_gfx }
+	clothing_gfx = { iberian_christian_clothing_gfx mena_clothing_gfx }
 	unit_gfx = { mena_unit_gfx }
 	
 	ethnicities = {
@@ -140,7 +140,7 @@ bavlim = {
 	
 	coa_gfx = { israelite_group_coa_gfx }
 	building_gfx = { mena_building_gfx }
-	clothing_gfx = { byzantine_clothing_gfx }
+	clothing_gfx = { mena_clothing_gfx dde_abbasid_clothing_gfx }
 	unit_gfx = { mena_unit_gfx }
 	
 	ethnicities = {
@@ -167,7 +167,7 @@ hebrew = {
 	
 	coa_gfx = { israelite_group_coa_gfx }
 	building_gfx = { mediterranean_building_gfx }
-	clothing_gfx = { byzantine_clothing_gfx western_clothing_gfx }
+	clothing_gfx = { mena_clothing_gfx } #This might be bugged
 	unit_gfx = { mena_unit_gfx }
 	
 	ethnicities = { # With the ingathering of the exiles, the Hebrews are a diverse group
@@ -175,7 +175,6 @@ hebrew = {
 		10 = mediterranean
 		10 = byzantine
 		1 = caucasian_dark_hair
-		1 = caucasian_ginger
 		1 = east_african
 	}
 }

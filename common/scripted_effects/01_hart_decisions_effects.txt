@@ -157,7 +157,7 @@ form_hebrew_decision_effects = {
 	}
 
 	#fame
-	# TODO debug why this is broken
+	# This takes effect but scope doesn't work for the tooltip
 	scope:hebrew_former.dynasty = {
 		add_dynasty_prestige_level = 1	
 		add_dynasty_prestige = 250
